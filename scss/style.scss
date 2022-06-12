@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+// ===============     THEME 1
+// #### Backgrounds
+
+$Theme-1-main-background: hsl(222, 26%, 31%);
+$Theme-1-toggle-background-keypad-background: hsl(223, 31%, 20%);
+$Theme-1-screen-background: hsl(224, 36%, 15%);
+
+// #### Keys
+
+$key-background: hsl(225, 21%, 49%);
+$key-shadow: hsl(224, 28%, 35%);
+
+$Red-key-background-toggle: hsl(6, 63%, 50%);
+$Red-key-shadow: hsl(6, 70%, 34%);
+
+$Orange-key-background: hsl(30, 25%, 89%);
+$Orange-key-shadow: hsl(28, 16%, 65%);
+
+// #### Text
+
+$Very-dark-grayish-blue: hsl(221, 14%, 31%);
+$White: hsl(0, 0, 100%);
+
+// ================ ### Theme 2
+
+// #### Backgrounds
+
+$Theme-2-main-background: hsl(0, 0%, 82%);
+$theme-2-toggle-background-keypad-background: hsl(0, 5%, 81%);
+$theme-2-screen-background: hsl(0, 0%, 93%);
+
+// #### Keys
+
+$Dark-cyan-key-background: hsl(185, 42%, 37%);
+$Very-cyan-key-shadow: hsl(185, 58%, 25%);
+
+$Orange-key-background-toggle: hsl(25, 98%, 40%);
+$Dark-orange-key-shadow: hsl(25, 99%, 27%);
+
+$grayish-yellow-key-background: hsl(45, 7%, 89%);
+$Dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+
+// #### Text
+
+$Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+$White-text: hsl(0, 0, 100%);
+
+// =================== ### Theme 3
+
+// #### Backgrounds
+
+$Theme-3-main-background: hsl(268, 75%, 9%);
+$Theme-3-toggle-background-keypad-background-screen-background: hsl(268, 71%, 12%);
+
+// #### Keys
+
+$theme-3-key-background: hsl(281, 89%, 26%);
+$Theme-3-key-shadow: hsl(285, 91%, 52%);
+
+$Theme-3-key-bg-toggle: hsl(176, 100%, 44%);
+$Soft-cyan-key-shadow: hsl(177, 92%, 70%);
+
+$dark-violet-key-background: hsl(268, 47%, 21%);
+$Dark-magenta-key-shadow: hsl(290, 70%, 36%);
+
+// #### Text
+
+$Light-yellow: hsl(52, 100%, 62%);
+$Very-dark-blue: hsl(198, 20%, 13%);
+
+// End of theme and keys color variables
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    background-color: $Theme-1-main-background;
+    font-weight: 700;
+    transition: transform 0.5s linear;
+    
+}
+
+body.active1{
+        background-color: $Theme-2-main-background;
+}
+body.active1 h1{
+    color: $Very-dark-grayish-yellow !important;
+}
+body.active1 p{
+    color: $Very-dark-grayish-yellow !important;
+}
+body.active1 h3{
+    color: $Very-dark-grayish-yellow !important;
+}
+body.active1 .output{
+    background-color: $theme-2-screen-background !important;
+}
+body.active1 .previous{
+    color: $Very-dark-grayish-yellow !important;;
+}
+body.active1 .current{
+    color: $Very-dark-grayish-yellow !important;
+}
+body.active1 .keys{
+    background-color: hsla(25, 98%, 40%, 0.089) !important;
+}    
+body.active1 input{
+    background-color: $grayish-yellow-key-background !important;
+    color: $Very-dark-grayish-yellow !important;
+    box-shadow:  0px 5px 0px 0px $Dark-orange-key-shadow ;
+}
+
+body.active1 #delete{
+    background-color: $Dark-cyan-key-background !important;
+    box-shadow:  0px 5px 0px 0px $Very-cyan-key-shadow !important;
+    color: $White !important;
+}
+
+body.active1 .reset{
+    background-color: $Dark-cyan-key-background !important;
+    box-shadow:  0px 5px 0px 0px $Very-cyan-key-shadow !important;
+    color: $White !important;
+}
+body.active1 .equal{
+    background-color: $Orange-key-background-toggle !important;
+    box-shadow:  0px 5px 0px 0px $Dark-orange-key-shadow !important;
+    color: $White !important;
+}
+body.active1 .toggle-box{
+    background-color: hsla(25, 98%, 40%, 0.089) !important;
+    
+}
+body.active1 .toggle-ball{
+    background-color: $Orange-key-background-toggle !important;
+}
+// END ACTIVE THEME 2
+
+
+body.active2{
+    background-color: $Theme-3-main-background;
+}
+body.active2 h1{
+    color: $Light-yellow !important;
+}
+body.active2 h3{
+    color: $Light-yellow !important;
+}
+body.active2 P{
+    color: $Light-yellow !important;
+}
+body.active2 .output{
+    background-color: $Theme-3-toggle-background-keypad-background-screen-background !important;
+}
+body.active2 .previous{
+    color: $Light-yellow !important;;
+}
+body.active2 .current{
+    color: $Light-yellow !important;
+}
+body.active2 .keys{
+    background-color: $Theme-3-toggle-background-keypad-background-screen-background !important;
+}    
+body.active2 input{
+    background-color: $dark-violet-key-background   !important;
+    color: $Light-yellow !important;
+    box-shadow:  0px 5px 0px 0px  $Dark-magenta-key-shadow !important;
+}
+
+body.active2 #delete{
+    background-color: hsl(268, 73%, 28%) !important;
+    box-shadow:  0px 5px 0px 0px $Theme-3-key-shadow !important;
+    color: $White !important;
+}
+
+body.active2 .reset{
+    background-color: hsl(268, 73%, 28%) !important;
+    box-shadow:  0px 5px 0px 0px $Theme-3-key-shadow !important;
+    color: $White !important;
+}
+body.active2 .equal{
+    background-color: $Theme-3-key-bg-toggle !important;
+    box-shadow:  0px 5px 0px 0px $Soft-cyan-key-shadow !important;
+    color: $Very-dark-blue !important;
+}
+body.active2 .toggle-box{
+    background-color: $Theme-3-toggle-background-keypad-background-screen-background !important;
+}
+body.active2 .toggle-ball{
+    background-color: $Theme-3-key-bg-toggle !important;
+}
+// END OF ACTIVE THEME 3
+
+
+.wrapper-grid{
+   min-height: 25vh;
+   display: flex;
+   flex-direction: column;
+   max-width: 500px;
+   margin: 1rem auto;
+
+    .title-toggle{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        margin-bottom: 1.4rem;
+        
+        padding: 1rem 0;
+        color: $White;
+        
+        h1{
+            font-size: 48px;
+            color: $White;
+        }
+       
+        .theme-toggle{
+            display: flex;
+            align-self: center;
+
+            h3{
+                font-size: 15px;
+                margin-right: 25px;
+                margin-top: 25px;
+                letter-spacing: 2px;
+                color: $White;
+            }
+            .toggle-number{
+                display: flex;
+                justify-content: center;
+
+                    
+                    p{
+                        padding: 0 15px ;
+                        margin-bottom: 0.3rem;
+                        color: $White;
+                        cursor: pointer;
+                    }
+            }
+        }
+
+       
+        
+        
+        .toggle-box{
+            background-color: $Theme-1-toggle-background-keypad-background;
+            width: 90px;
+            height: 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            position: relative;
+            margin-left: 13px;
+
+
+            .toggle-ball{
+                width: 15px;
+                height: 15px;
+                background-color: $Red-key-background-toggle;
+                border-radius: 30px;
+                cursor: pointer;
+                transition: transform 0.4s linear;
+                position: absolute;
+                left: 0;
+                top: 5px;
+                z-index: 1;
+                
+            }
+       }
+        
+    }
+    // END OF TOGGLE AND LOGO STYLING
+
+    .output{
+        background-color: $Theme-1-screen-background;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        word-wrap: break-word;
+        word-break: break-all;
+        padding:10px 30px ;
+        min-height: 130px;
+        border-radius: 10px;
+        margin-bottom: 1.4rem;
+
+        .previous{
+            color: rgba(219, 219, 219, 0.753);
+            font-size: 1.6rem;
+        }
+        .current{
+            color: rgb(231, 231, 231);
+            font-size: 2.5rem;
+        }
+
+    }
+
+    // END OF OUTPUT STYLING
+    
+    .keys{
+        background-color: $Theme-1-screen-background;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: minmax(5, auto) repeat(5, 100px);
+        border-radius: 10px;
+        min-height: 400px;
+        padding: 25px;
+        gap: 23px;
+        width: 100%;
+
+         input{
+            background-color: $Orange-key-background;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0px 3px  0px 0px $Orange-key-shadow;
+            border-radius: 10px;
+            font-size: 35px;
+            color: $Very-dark-grayish-blue;
+            font-weight: 900;
+         }
+         .span-two{
+            grid-column: span 2;
+         }
+         .reset{
+             background-color: $key-background;
+             color: $White;
+             box-shadow: 0px 3px 0px 0px  hsl(224, 28%, 35%);
+             font-size: 18px;
+             font-weight: 900;
+         }
+
+         .equal{
+            background: $Red-key-background-toggle;
+            color: $White;
+            box-shadow: 0px 3px 0px 0px $Red-key-shadow;
+            font-size: 40px;
+            font-weight: 900;
+        }
+        #delete{
+            background: $key-background;
+            color: $White;
+            box-shadow: 0px 3px 0px 0px  $key-shadow;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .wrapper-grid{
+        max-width: 500px;
+        margin: 0 2rem;
+
+
+        .key{
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: minmax(5, auto) repeat(5, 100px);
+            border-radius: 10px;
+            min-height: 300px;
+            padding: 20px;
+            gap: 20px;
+           
+        }
+    }
+}

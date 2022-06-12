@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="main.js" defer></script>
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+
+<div class="wrapper-grid">
+  <!-- Toggle - logo -->
+  <div class="title-toggle">
+   <h1>calc</h1>
+   <div class="theme-toggle">
+     <h3>THEME</h3>
+     <div class="toggle">
+       <div class="toggle-number">
+        <p class="toggle-1" id="one">1</p>
+        <p class="toggle-2" id="two">2</p>
+        <p class="toggle-3" id="three">3</p>
+       </div>
+       <div class="toggle-box">
+          <div class="toggle-ball" id="ball"></div>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- End of Toggle - Logo  -->
+
+  <!-- Ouput section -->
+  <div class="output">
+    <div class="previous" data-previous>
+    </div>
+    <div class="current" data-current>
+    </div>
+  </div>
+  <!-- End of output -->
+
+  <div class="keys">
+    <input type="button" value="7" data-number>
+    <input type="button" value="8" data-number>
+    <input type="button" value="9" data-number>
+    <input type="button" value="DEL" data-delete id="delete" class="delete">
+    <input type="button" value="4" data-number>
+    <input type="button" value="5" data-number>
+    <input type="button" value="6" data-number>
+    <input type="button" value="+" data-operator>
+    <input type="button" value="1" data-number>
+    <input type="button" value="2" data-number>
+    <input type="button" value="3" data-number>
+    <input type="button" value="-" data-operator>
+    <input type="button" value="." data-number>
+    <input type="button" value="0" data-number>
+    <input type="button" value="÷" data-operator>
+    <input type="button" value="*" data-operator>
+    <input type="button" value="RESET" data-reset class="span-two reset" id="reset">
+    <input type="button" value="=" data-equals class="span-two equal">
+    
+
+  </div>
+
+</div>
+  
+
+  
+</body>
+</html>
